@@ -44,5 +44,6 @@ Name                           Property
                                NameServer           : 1.1.1.1,1.0.0.1
                                RegistrationEnabled  : 1
                                RegisterAdapterName  : 0
-                               TCPNoDelay           : 1```
+                               TCPNoDelay           : 1
+```
 
