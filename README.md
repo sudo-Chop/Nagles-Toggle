@@ -22,7 +22,8 @@ You may also need to change your Execution Policy so that your are able to run P
 For security purposes you can revert back to default Execution Policy by running the command: `Set-ExecutionPolicy Restricted`
 
 ## Example Output
-`PS C:\Users\Admin\scriptz> .\disable-nagles-algorithm.ps1
+``` PowerShell
+PS C:\Users\Admin\scriptz> .\disable-nagles-algorithm.ps1
 >>>> Nagles Algorithm Disable <<<<
 TcpAckFrequency:'1'
 TCPNoDelay:'1'
@@ -43,5 +44,5 @@ Name                           Property
                                NameServer           : 1.1.1.1,1.0.0.1
                                RegistrationEnabled  : 1
                                RegisterAdapterName  : 0
-                               TCPNoDelay           : 1`
+                               TCPNoDelay           : 1```
 
