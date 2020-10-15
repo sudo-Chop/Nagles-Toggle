@@ -8,7 +8,7 @@ Creates and sets DWORD values under primary NIC's registry depending on whether 
 ### Why Disable?
 By default Windows 10 has Nagle's Agorithm enabled. Disabling the algorithm helps remove latency issue which can benefit applications which rely on large amount of data traffic (i.e. Online Computer Games).
 
-### Warning
+#### Warning
 Disabling Nagle's Algorithm can cause network congestion which can intefere with other connected devices on your network.
 
 
