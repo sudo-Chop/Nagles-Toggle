@@ -13,15 +13,21 @@ Disabling Nagle's Algorithm can cause network congestion which can intefere with
 
 ## Setup
 You will need to find the NIC device ID for your system and edit the scripts with this ID under 'YOUR NIC DEVICE ID'.
-  * Example: {65b5c830-a4d8-4bc9-a88e-c2eec895e328}
+  1. Open the Registry Editor in Windows
+  2. Enter or follow the path HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces
+  3. Find the NIC device ID for NIC that contains your IP Address Example: {65b5c830-a4d8-4bc9-a88e-c2eec895e328}
+  4. Replace 'YOUR NIC DEVICE ID' in scripts with the alphanumerical value found in Registry Editor.
   
-You may also need to change your Execution Policy so that your are able to run PowerShell scripts. To change Execution Policy:
+## Run Scripts
+You may need to change your Execution Policy so that your are able to run PowerShell scripts. To change Execution Policy:
   1. Right click Windows Powershell prompt, Run as Administrator, then enter the command: `Set-ExecutionPolicy RemoteSigned`.
   2. You will then be prompted if you want to change the execution policy. Proceed by entering `A` for 'Yes to All'. Once complete you will be able to run the scripts provided.
 
+Run Script.
+
 For security purposes you can revert back to default Execution Policy by running the command: `Set-ExecutionPolicy Restricted`
 
-## Example Output
+### Example Output
 ``` PowerShell
 PS C:\Users\Admin\scriptz> .\disable-nagles-algorithm.ps1
 >>>> Nagles Algorithm Disable <<<<
