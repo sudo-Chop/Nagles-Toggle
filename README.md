@@ -18,6 +18,8 @@ You will need to find the NIC device ID for your system and edit the scripts wit
   3. Find the NIC device ID for NIC that contains your IP Address Example: {65b5c830-a4d8-4bc9-a88e-c2eec895e328}
   4. Replace 'YOUR NIC DEVICE ID' in scripts with the alphanumerical value found in Registry Editor.
   
+Highly suggest creating a shortcut on desktop to easily run scripts. This can be done by a quick Google search :).
+  
 ## Run Scripts
 You may need to change your Execution Policy so that your are able to run PowerShell scripts. To change Execution Policy:
   1. Right click Windows Powershell prompt, Run as Administrator, then enter the command: `Set-ExecutionPolicy RemoteSigned`.
