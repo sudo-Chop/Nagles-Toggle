@@ -21,4 +21,27 @@ You may also need to change your Execution Policy so that your are able to run P
 
 For security purposes you can revert back to default Execution Policy by running the command: `Set-ExecutionPolicy Restricted`
 
+## Example Output
+`PS C:\Users\Admin\scriptz> .\disable-nagles-algorithm.ps1
+>>>> Nagles Algorithm Disable <<<<
+TcpAckFrequency:'1'
+TCPNoDelay:'1'
+
+
+    Hive: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces
+
+
+Name                           Property
+----                           --------
+{65b5c830-a4d8-4bc9-a88e-c2eec EnableDHCP           : 0
+895e328}                       IPAddress            : {10.10.10.10}
+                               SubnetMask           : {255.255.255.0}
+                               DefaultGateway       : {10.10.10.1}
+                               DefaultGatewayMetric : {0}
+                               TcpAckFrequency      : 1
+                               Domain               :
+                               NameServer           : 1.1.1.1,1.0.0.1
+                               RegistrationEnabled  : 1
+                               RegisterAdapterName  : 0
+                               TCPNoDelay           : 1`
 
