@@ -13,8 +13,9 @@ Disabling Nagle's Algorithm can cause network congestion which can intefere with
 
 ## Setup
 You will need to find the NIC device ID for your system and edit the scripts with this ID under 'YOUR NIC DEVICE ID'.
-You may also need to change your Execution Policy so that your are able to run PowerShell scripts. To change Execution Policy in order to run PowerShell scripts:
+You may also need to change your Execution Policy so that your are able to run PowerShell scripts. To change Execution Policy:
   1. Right click Windows Powershell prompt, Run as Administrator, then enter the command: `Set-ExecutionPolicy RemoteSigned`.
   2. You will then be prompted if you want to change the execution policy. Proceed by entering `A` for 'Yes to All'. Once complete you will be able to run the scripts provided.
+For security purposes you can revert back to default Execution Policy by running the command: `Set-ExecutionPolicy Restricted`
 
 
