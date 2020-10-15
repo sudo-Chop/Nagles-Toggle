@@ -1,6 +1,6 @@
 ﻿#These values will need to be updated
 $HKLM_REG = 'hklm:\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces'
-$NIC = '{YOUR NIC ID}'
+$NIC = '{YOUR NIC DEVICE ID}'
 
 $FULL_PATH = Join-Path -Path $HKLM_REG -ChildPath $NIC
 $NIC_INFO = Get-Childitem -path $HKLM_REG -recurse -ErrorAction SilentlyContinue | Where-Object {$_.Name -match $NIC}
